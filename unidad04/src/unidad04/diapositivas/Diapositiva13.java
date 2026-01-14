@@ -9,9 +9,11 @@ public class Diapositiva13 {
 		 * mostrarlas por pantalla.
 		 */
 		
-		int[] enteros = new int[5];
-		double[] doubles = new double[5];
-		boolean[] booleanos = new boolean[5];
+		int tam = 5;
+		
+		int[] enteros = new int[tam];
+		double[] doubles = new double[tam];
+		boolean[] booleanos = new boolean[tam];
 
 		System.out.println(enteros);
 		System.out.println(doubles);
