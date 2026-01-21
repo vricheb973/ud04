@@ -9,7 +9,6 @@ public class Diapositiva25 {
 		
 		System.out.println(Arrays.toString(rellenaPares(10, 10)));
 		
-
 	}
 	
 	public static int[] rellenaPares(int tam, int fin) {
