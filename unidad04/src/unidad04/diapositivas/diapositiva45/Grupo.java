@@ -20,11 +20,11 @@ public class Grupo {
 	}
 	
 	//Métodos
-	public void agregarAlumno(Alumno alumno) {
-		this.alumnos.add(alumno);
+	public void agregarAlumno(Alumno a) {
+		this.alumnos.add(a);
 	}
 	
-	public boolean eliminarAlumnoPorDNIForeach(String dni) {
+	public boolean eliminarAlumnoPorDNIForeach(String dni) {		
 		Alumno eliminar = null;
 		boolean result = false;
 		
@@ -44,7 +44,7 @@ public class Grupo {
 		Alumno result = null;
 		
 		for(Alumno a : this.alumnos) {
-			if(a.getDni().equals(dni)) {
+			if(a.getDni().equals(dni) && result == null) {
 				result = a;
 			}
 		}
@@ -80,16 +80,9 @@ public class Grupo {
 	}
 	
 	public void mostrarAlumnos() {
-		
+		for(Alumno a : this.alumnos) {
+			a.mostrar();
+		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

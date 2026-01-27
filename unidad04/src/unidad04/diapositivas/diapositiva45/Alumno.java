@@ -36,4 +36,8 @@ public class Alumno {
 		this.notaMedia = notaMedia;
 	}
 	
+	public void mostrar() {
+		System.out.printf("Nombre: %s - DNI: %s - Nota: %.2f \n", this.nombre, this.dni, this.notaMedia);
+	}
+	
 }
